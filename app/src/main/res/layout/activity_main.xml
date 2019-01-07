@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:text=""
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="50px">
+
+        <Button
+            android:id="@+id/num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/num3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/num4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/num1"
+            android:layout_alignParentLeft="true"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/num5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/num2"
+            android:layout_centerInParent="true"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/num6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/num3"
+            android:layout_alignParentRight="true"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/num7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/num4"
+            android:layout_alignParentLeft="true"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/num8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/num5"
+            android:layout_centerInParent="true"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/num9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/num6"
+            android:layout_alignParentRight="true"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/num0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/num7"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/equal"
+            android:layout_width= "wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/num8"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:text=" = "
+            android:textColor="@android:color/holo_green_dark"/>
+        <Button
+            android:id="@+id/clear"
+            android:layout_width= "wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/num9"
+            android:layout_alignParentRight="true"
+            android:text="Clear / C"
+            android:textColor="@android:color/holo_red_dark"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="+"
+            android:background="@android:color/holo_orange_dark"
+            android:layout_marginRight="10px"
+            android:layout_marginLeft="15px"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/plus"
+            android:textSize="20dp"
+            android:text="-"
+            android:background="@android:color/holo_orange_dark"
+            android:layout_marginRight="10px"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@+id/plus" />
+        <Button
+            android:id="@+id/multiplication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/minus"
+            android:textSize="20dp"
+            android:text="X"
+            android:background="@android:color/holo_orange_dark"
+            android:layout_marginRight="10px"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@+id/minus" />
+        <Button
+            android:id="@+id/division"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/multiplication"
+            android:textSize="20dp"
+            android:text="/"
+            android:background="@android:color/holo_orange_dark"
+            android:layout_marginRight="10px"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@+id/multiplication" />
+
+    </RelativeLayout>
+</LinearLayout>
